@@ -1,0 +1,13 @@
+[Unit]
+After=getty.target
+Description= phieu luong tu dong
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/home/ec2-user/bglobal/phieu-luong/backend/tranning_001_phieu-luong-tu-dong_0722
+StandardOutput=null
+StandardError=null
+ExecStart=/home/ec2-user/bglobal/phieu-luong/backend/tranning_001_phieu-luong-tu-dong_0722/systemd/phieu-luong.sh
+SuccessExitStatus=143
+#Restart=on-failure
